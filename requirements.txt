@@ -1,0 +1,6 @@
+selenium
+beautifulsoup4
+schedule
+discord-webhook
+psycopg2-binary
+python-dotenv==1.0.1

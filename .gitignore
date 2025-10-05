@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.env
+.venv/
+venv/
+ENV/
+env/
+*.egg-info/
+dist/
+build/
+
+# IDEs
+.idea/
+.vscode/
+
+# Docker
+*.tar
+*.log
+
+# System
+.DS_Store
+Thumbs.db
+
+# Database / secrets
+*.sqlite3
