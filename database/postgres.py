@@ -9,10 +9,10 @@ load_dotenv()
 class DatabaseHandler:
     def __init__(self):
         self.conn = psycopg2.connect(
-            host=os.getenv("DB_HOST", "postgredb"),
-            database=os.getenv("DB_NAME", "Prices"),
-            user=os.getenv("DB_USER", "matthe2209"),
-            password=os.getenv("DB_PASS", "1234")
+            host=os.getenv("DB_HOST"),
+            database=os.getenv("DB_NAME"),
+            user=os.getenv("DB_USER"),
+            password=os.getenv("DB_PASS")
         )
         self.cursor = self.conn.cursor()
 
