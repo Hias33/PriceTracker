@@ -25,7 +25,7 @@ PRODUCT_NAME = config.get("product_name", "Amazon Product")
 # ---------- Initialize objects ----------
 scraper = AmazonScraper()
 notifier = DiscordNotifier(WEBHOOK_URL)
-db_handler = DatabaseHandler()  # Uses RaspberryPiDB, Prices, user: matthias, pwd: 1234
+db_handler = DatabaseHandler() 
 
 # ---------- Main logic ----------
 def check_price():
@@ -54,7 +54,7 @@ def check_price():
 # ---------- Scheduler ----------
 schedule.every(INTERVAL).minutes.do(check_price)
 logging.info(f"Starting Price Tracker. Checking every {INTERVAL} minutes.")
-check_price()  # initial check
+check_price() 
 
 while True:
     schedule.run_pending()
